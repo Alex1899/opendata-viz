@@ -1,0 +1,4785 @@
+@prefix : <http://ak5u16.github.io/BICS/data/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix survey: <http://ak5u16.github.io/BICS/schema/survey/> .
+
+:Lt250 rdf:type survey:WorkforceSize ; 
+ 	 dc:title "Workforce Size < 250" . 
+
+:Mt250 rdf:type survey:WorkforceSize ; 
+ 	 dc:title "Workforce Size 250+" . 
+
+:Total rdf:type survey:WorkforceSize ; 
+ 	 dc:title "Total" . 
+
+:MiningQuarrying rdf:type survey:Industry ;
+ 	 dc:title "Mining And Quarrying" .
+ 
+:Manufacturing rdf:type survey:Industry ;
+ 	 dc:title "Manufacturing" .
+ 
+:WaterSupplySewerageWasteManagementRemediationActivities rdf:type survey:Industry ;
+ 	 dc:title "Water Supply, Sewerage, Waste Management And Remediation Activities" .
+ 
+:Construction rdf:type survey:Industry ;
+ 	 dc:title "Construction" .
+ 
+:WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles rdf:type survey:Industry ;
+ 	 dc:title "Wholesale And Retail Trade; Repair Of Motor Vehicles And Motorcycles" .
+ 
+:AccommodationFoodServiceActivities rdf:type survey:Industry ;
+ 	 dc:title "Accommodation And Food Service Activities" .
+ 
+:TransportationStorage rdf:type survey:Industry ;
+ 	 dc:title "Transportation And Storage" .
+ 
+:InformationCommunication rdf:type survey:Industry ;
+ 	 dc:title "Information And Communication" .
+ 
+:RealEstateActivities rdf:type survey:Industry ;
+ 	 dc:title "Real Estate Activities" .
+ 
+:ProfessionalScientificTechnicalActivities rdf:type survey:Industry ;
+ 	 dc:title "Professional, Scientific And Technical Activities" .
+ 
+:AdministrativeSupportServiceActivities rdf:type survey:Industry ;
+ 	 dc:title "Administrative And Support Service Activities" .
+ 
+:Education rdf:type survey:Industry ;
+ 	 dc:title "Education" .
+ 
+:HumanHealthSocialWorkActivities rdf:type survey:Industry ;
+ 	 dc:title "Human Health And Social Work Activities" .
+ 
+:ArtsEntertainmentRecreation rdf:type survey:Industry ;
+ 	 dc:title "Arts, Entertainment And Recreation" .
+ 
+:OtherServiceActivities rdf:type survey:Industry ;
+ 	 dc:title "Other Service Activities" .
+ 
+:AllIndustries rdf:type survey:Industry ;
+ 	 dc:title "All Industries" .
+	 
+:sampleSize1 rdf:type scovo:Dataset ;
+ 	dc:title "Sample for the BICS survey broken down by industry" ; 
+ 	scovo:datasetOf :sampleSize1_1_1 ; 
+ 	scovo:datasetOf :sampleSize1_1_2 ; 
+ 	scovo:datasetOf :sampleSize1_1_3 ; 
+ 	scovo:datasetOf :sampleSize1_2_1 ; 
+ 	scovo:datasetOf :sampleSize1_2_2 ; 
+ 	scovo:datasetOf :sampleSize1_2_3 ; 
+ 	scovo:datasetOf :sampleSize1_3_1 ; 
+ 	scovo:datasetOf :sampleSize1_3_2 ; 
+ 	scovo:datasetOf :sampleSize1_3_3 ; 
+ 	scovo:datasetOf :sampleSize1_4_1 ; 
+ 	scovo:datasetOf :sampleSize1_4_2 ; 
+ 	scovo:datasetOf :sampleSize1_4_3 ; 
+ 	scovo:datasetOf :sampleSize1_5_1 ; 
+ 	scovo:datasetOf :sampleSize1_5_2 ; 
+ 	scovo:datasetOf :sampleSize1_5_3 ; 
+ 	scovo:datasetOf :sampleSize1_6_1 ; 
+ 	scovo:datasetOf :sampleSize1_6_2 ; 
+ 	scovo:datasetOf :sampleSize1_6_3 ; 
+ 	scovo:datasetOf :sampleSize1_7_1 ; 
+ 	scovo:datasetOf :sampleSize1_7_2 ; 
+ 	scovo:datasetOf :sampleSize1_7_3 ; 
+ 	scovo:datasetOf :sampleSize1_8_1 ; 
+ 	scovo:datasetOf :sampleSize1_8_2 ; 
+ 	scovo:datasetOf :sampleSize1_8_3 ; 
+ 	scovo:datasetOf :sampleSize1_9_1 ; 
+ 	scovo:datasetOf :sampleSize1_9_2 ; 
+ 	scovo:datasetOf :sampleSize1_9_3 ; 
+ 	scovo:datasetOf :sampleSize1_10_1 ; 
+ 	scovo:datasetOf :sampleSize1_10_2 ; 
+ 	scovo:datasetOf :sampleSize1_10_3 ; 
+ 	scovo:datasetOf :sampleSize1_11_1 ; 
+ 	scovo:datasetOf :sampleSize1_11_2 ; 
+ 	scovo:datasetOf :sampleSize1_11_3 ; 
+ 	scovo:datasetOf :sampleSize1_12_1 ; 
+ 	scovo:datasetOf :sampleSize1_12_2 ; 
+ 	scovo:datasetOf :sampleSize1_12_3 ; 
+ 	scovo:datasetOf :sampleSize1_13_1 ; 
+ 	scovo:datasetOf :sampleSize1_13_2 ; 
+ 	scovo:datasetOf :sampleSize1_13_3 ; 
+ 	scovo:datasetOf :sampleSize1_14_1 ; 
+ 	scovo:datasetOf :sampleSize1_14_2 ; 
+ 	scovo:datasetOf :sampleSize1_14_3 ; 
+ 	scovo:datasetOf :sampleSize1_15_1 ; 
+ 	scovo:datasetOf :sampleSize1_15_2 ; 
+ 	scovo:datasetOf :sampleSize1_15_3 ; 
+ 	scovo:datasetOf :sampleSize1_16_1 ; 
+ 	scovo:datasetOf :sampleSize1_16_2 ; 
+ 	scovo:datasetOf :sampleSize1_16_3 . 
+ 
+:sampleSize1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 15.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :MiningQuarrying; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 13.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :MiningQuarrying; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 28.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :MiningQuarrying; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 1785.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 1370.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 3155.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 130.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 71.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 201.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 722.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 312.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 1034.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 1819.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 1180.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 2999.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 975.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 659.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 1634.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 528.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 335.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 863.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 794.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 422.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 1216.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 112.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :RealEstateActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 88.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :RealEstateActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 200.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :RealEstateActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 1303.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 720.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 2023.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 1287.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 1072.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 2359.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 303.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 457.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 760.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 145.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 149.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 294.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_14_1 rdf:type scovo:Item ; 
+ 	rdf:value 415.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_14_2 rdf:type scovo:Item ; 
+ 	rdf:value 303.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_14_3 rdf:type scovo:Item ; 
+ 	rdf:value 718.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_15_1 rdf:type scovo:Item ; 
+ 	rdf:value 108.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :OtherServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_15_2 rdf:type scovo:Item ; 
+ 	rdf:value 29.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :OtherServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_15_3 rdf:type scovo:Item ; 
+ 	rdf:value 137.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :OtherServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_16_1 rdf:type scovo:Item ; 
+ 	rdf:value 10442.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_16_2 rdf:type scovo:Item ; 
+ 	rdf:value 7181.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize1_16_3 rdf:type scovo:Item ; 
+ 	rdf:value 17623.0; 
+ 	scovo:dataset :sampleSize1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize2 rdf:type scovo:Dataset ;
+ 	dc:title "Sample for the BICS survey broken down by workforce size" ; 
+ 	scovo:datasetOf :sampleSize2_1_1 ; 
+ 	scovo:datasetOf :sampleSize2_1_2 ; 
+ 	scovo:datasetOf :sampleSize2_1_3 ; 
+ 	scovo:datasetOf :sampleSize2_1_4 . 
+ 
+:sampleSize2_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 1326.0; 
+ 	scovo:dataset :sampleSize2; 
+ 	scovo:dimension :Lt100; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize2_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 9116.0; 
+ 	scovo:dataset :sampleSize2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize2_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 7181.0; 
+ 	scovo:dataset :sampleSize2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:sampleSize2_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 17623.0; 
+ 	scovo:dataset :sampleSize2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1 rdf:type scovo:Dataset ;
+ 	dc:title "Responses to the BICS survey broken down by industry" ; 
+ 	scovo:datasetOf :responseRate1_1_1 ; 
+ 	scovo:datasetOf :responseRate1_1_2 ; 
+ 	scovo:datasetOf :responseRate1_1_3 ; 
+ 	scovo:datasetOf :responseRate1_2_1 ; 
+ 	scovo:datasetOf :responseRate1_2_2 ; 
+ 	scovo:datasetOf :responseRate1_2_3 ; 
+ 	scovo:datasetOf :responseRate1_3_1 ; 
+ 	scovo:datasetOf :responseRate1_3_2 ; 
+ 	scovo:datasetOf :responseRate1_3_3 ; 
+ 	scovo:datasetOf :responseRate1_4_1 ; 
+ 	scovo:datasetOf :responseRate1_4_2 ; 
+ 	scovo:datasetOf :responseRate1_4_3 ; 
+ 	scovo:datasetOf :responseRate1_5_1 ; 
+ 	scovo:datasetOf :responseRate1_5_2 ; 
+ 	scovo:datasetOf :responseRate1_5_3 ; 
+ 	scovo:datasetOf :responseRate1_6_1 ; 
+ 	scovo:datasetOf :responseRate1_6_2 ; 
+ 	scovo:datasetOf :responseRate1_6_3 ; 
+ 	scovo:datasetOf :responseRate1_7_1 ; 
+ 	scovo:datasetOf :responseRate1_7_2 ; 
+ 	scovo:datasetOf :responseRate1_7_3 ; 
+ 	scovo:datasetOf :responseRate1_8_1 ; 
+ 	scovo:datasetOf :responseRate1_8_2 ; 
+ 	scovo:datasetOf :responseRate1_8_3 ; 
+ 	scovo:datasetOf :responseRate1_9_1 ; 
+ 	scovo:datasetOf :responseRate1_9_2 ; 
+ 	scovo:datasetOf :responseRate1_9_3 ; 
+ 	scovo:datasetOf :responseRate1_10_1 ; 
+ 	scovo:datasetOf :responseRate1_10_2 ; 
+ 	scovo:datasetOf :responseRate1_10_3 ; 
+ 	scovo:datasetOf :responseRate1_11_1 ; 
+ 	scovo:datasetOf :responseRate1_11_2 ; 
+ 	scovo:datasetOf :responseRate1_11_3 ; 
+ 	scovo:datasetOf :responseRate1_12_1 ; 
+ 	scovo:datasetOf :responseRate1_12_2 ; 
+ 	scovo:datasetOf :responseRate1_12_3 ; 
+ 	scovo:datasetOf :responseRate1_13_1 ; 
+ 	scovo:datasetOf :responseRate1_13_2 ; 
+ 	scovo:datasetOf :responseRate1_13_3 . 
+ 
+:responseRate1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 648.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 449.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 1097.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 50.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 20.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 70.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 208.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 76.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 284.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 686.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 344.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 1030.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 321.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 195.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 516.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 193.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 89.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 282.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 297.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 121.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 418.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 468.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 265.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 733.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 453.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 361.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 814.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 127.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 191.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 318.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 85.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 59.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 144.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 180.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 98.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 278.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 3809.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 2305.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 6114.0; 
+ 	scovo:dataset :responseRate1; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2 rdf:type scovo:Dataset ;
+ 	dc:title "Proportion of responses to the BICS survey broken down by industry" ; 
+ 	scovo:datasetOf :responseRate2_1_7 ; 
+ 	scovo:datasetOf :responseRate2_1_8 ; 
+ 	scovo:datasetOf :responseRate2_1_9 ; 
+ 	scovo:datasetOf :responseRate2_2_7 ; 
+ 	scovo:datasetOf :responseRate2_2_8 ; 
+ 	scovo:datasetOf :responseRate2_2_9 ; 
+ 	scovo:datasetOf :responseRate2_3_7 ; 
+ 	scovo:datasetOf :responseRate2_3_8 ; 
+ 	scovo:datasetOf :responseRate2_3_9 ; 
+ 	scovo:datasetOf :responseRate2_4_7 ; 
+ 	scovo:datasetOf :responseRate2_4_8 ; 
+ 	scovo:datasetOf :responseRate2_4_9 ; 
+ 	scovo:datasetOf :responseRate2_5_7 ; 
+ 	scovo:datasetOf :responseRate2_5_8 ; 
+ 	scovo:datasetOf :responseRate2_5_9 ; 
+ 	scovo:datasetOf :responseRate2_6_7 ; 
+ 	scovo:datasetOf :responseRate2_6_8 ; 
+ 	scovo:datasetOf :responseRate2_6_9 ; 
+ 	scovo:datasetOf :responseRate2_7_7 ; 
+ 	scovo:datasetOf :responseRate2_7_8 ; 
+ 	scovo:datasetOf :responseRate2_7_9 ; 
+ 	scovo:datasetOf :responseRate2_8_7 ; 
+ 	scovo:datasetOf :responseRate2_8_8 ; 
+ 	scovo:datasetOf :responseRate2_8_9 ; 
+ 	scovo:datasetOf :responseRate2_9_7 ; 
+ 	scovo:datasetOf :responseRate2_9_8 ; 
+ 	scovo:datasetOf :responseRate2_9_9 ; 
+ 	scovo:datasetOf :responseRate2_10_7 ; 
+ 	scovo:datasetOf :responseRate2_10_8 ; 
+ 	scovo:datasetOf :responseRate2_10_9 ; 
+ 	scovo:datasetOf :responseRate2_11_7 ; 
+ 	scovo:datasetOf :responseRate2_11_8 ; 
+ 	scovo:datasetOf :responseRate2_11_9 ; 
+ 	scovo:datasetOf :responseRate2_12_7 ; 
+ 	scovo:datasetOf :responseRate2_12_8 ; 
+ 	scovo:datasetOf :responseRate2_12_9 ; 
+ 	scovo:datasetOf :responseRate2_13_7 ; 
+ 	scovo:datasetOf :responseRate2_13_8 ; 
+ 	scovo:datasetOf :responseRate2_13_9 . 
+ 
+:responseRate2_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.363; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_1_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.328; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_1_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.348; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.385; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_2_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.282; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_2_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.348; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.288; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_3_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.244; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_3_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.996; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_4_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.377; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_4_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.292; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_4_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.343; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_5_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.329; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_5_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.296; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_5_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.316; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_6_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.366; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_6_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.266; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_6_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.327; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_7_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.374; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_7_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.287; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_7_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.344; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_8_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.359; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_8_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.368; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_8_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.362; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_9_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.352; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_9_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.337; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_9_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.345; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_10_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.419; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_10_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.418; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_10_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.418; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_11_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.586; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_11_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.396; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_11_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.49; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_12_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.434; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_12_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.323; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_12_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.387; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_13_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.365; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_13_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.321; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate2_13_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.347; 
+ 	scovo:dataset :responseRate2; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate3 rdf:type scovo:Dataset ;
+ 	dc:title "Responses to the BICS survey broken down by workforce size" ; 
+ 	scovo:datasetOf :responseRate3_1_1 ; 
+ 	scovo:datasetOf :responseRate3_1_2 ; 
+ 	scovo:datasetOf :responseRate3_1_3 ; 
+ 	scovo:datasetOf :responseRate3_1_4 . 
+ 
+:responseRate3_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 357.0; 
+ 	scovo:dataset :responseRate3; 
+ 	scovo:dimension :Lt100; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate3_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 3452.0; 
+ 	scovo:dataset :responseRate3; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate3_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 2305.0; 
+ 	scovo:dataset :responseRate3; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate3_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 6114.0; 
+ 	scovo:dataset :responseRate3; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate4 rdf:type scovo:Dataset ;
+ 	dc:title "Proportion of responses to the BICS survey broken down by workforce size" ; 
+ 	scovo:datasetOf :responseRate4_1_7 ; 
+ 	scovo:datasetOf :responseRate4_1_8 ; 
+ 	scovo:datasetOf :responseRate4_1_9 ; 
+ 	scovo:datasetOf :responseRate4_1_10 . 
+ 
+:responseRate4_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.269; 
+ 	scovo:dataset :responseRate4; 
+ 	scovo:dimension :Lt100; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate4_1_8 rdf:type scovo:Item ; 
+ 	rdf:value 0.379; 
+ 	scovo:dataset :responseRate4; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate4_1_9 rdf:type scovo:Item ; 
+ 	rdf:value 0.321; 
+ 	scovo:dataset :responseRate4; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:responseRate4_1_10 rdf:type scovo:Item ; 
+ 	rdf:value 0.347; 
+ 	scovo:dataset :responseRate4; 
+ 	scovo:dimension :Total; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:WorkforceSize rdf:type survey:WorkforceSize ; 
+ 	dc:title "Workforce Size" . 
+ 
+:ContinuingToTrade rdf:type survey:TradingStatus; 
+ 	dc:title "ContinuingToTrade" .
+ 
+:PermanentlyStopped rdf:type survey:TradingStatus; 
+ 	dc:title "PermanentlyStopped" .
+ 
+:TemporarilyStopped rdf:type survey:TradingStatus; 
+ 	dc:title "TemporarilyStopped" .
+ 
+:tradingStatus1 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of all responding businesses, broken down by industry, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :tradingStatus1_1_1 ; 
+ 	scovo:datasetOf :tradingStatus1_1_2 ; 
+ 	scovo:datasetOf :tradingStatus1_1_3 ; 
+ 	scovo:datasetOf :tradingStatus1_2_1 ; 
+ 	scovo:datasetOf :tradingStatus1_2_2 ; 
+ 	scovo:datasetOf :tradingStatus1_2_3 ; 
+ 	scovo:datasetOf :tradingStatus1_3_1 ; 
+ 	scovo:datasetOf :tradingStatus1_3_2 ; 
+ 	scovo:datasetOf :tradingStatus1_3_3 ; 
+ 	scovo:datasetOf :tradingStatus1_4_1 ; 
+ 	scovo:datasetOf :tradingStatus1_4_2 ; 
+ 	scovo:datasetOf :tradingStatus1_4_3 ; 
+ 	scovo:datasetOf :tradingStatus1_5_1 ; 
+ 	scovo:datasetOf :tradingStatus1_5_2 ; 
+ 	scovo:datasetOf :tradingStatus1_5_3 ; 
+ 	scovo:datasetOf :tradingStatus1_6_1 ; 
+ 	scovo:datasetOf :tradingStatus1_6_2 ; 
+ 	scovo:datasetOf :tradingStatus1_6_3 ; 
+ 	scovo:datasetOf :tradingStatus1_7_1 ; 
+ 	scovo:datasetOf :tradingStatus1_7_2 ; 
+ 	scovo:datasetOf :tradingStatus1_7_3 ; 
+ 	scovo:datasetOf :tradingStatus1_8_1 ; 
+ 	scovo:datasetOf :tradingStatus1_8_2 ; 
+ 	scovo:datasetOf :tradingStatus1_8_3 ; 
+ 	scovo:datasetOf :tradingStatus1_9_1 ; 
+ 	scovo:datasetOf :tradingStatus1_9_2 ; 
+ 	scovo:datasetOf :tradingStatus1_9_3 ; 
+ 	scovo:datasetOf :tradingStatus1_10_1 ; 
+ 	scovo:datasetOf :tradingStatus1_10_2 ; 
+ 	scovo:datasetOf :tradingStatus1_10_3 ; 
+ 	scovo:datasetOf :tradingStatus1_11_1 ; 
+ 	scovo:datasetOf :tradingStatus1_11_2 ; 
+ 	scovo:datasetOf :tradingStatus1_11_3 ; 
+ 	scovo:datasetOf :tradingStatus1_12_1 ; 
+ 	scovo:datasetOf :tradingStatus1_12_2 ; 
+ 	scovo:datasetOf :tradingStatus1_12_3 ; 
+ 	scovo:datasetOf :tradingStatus1_13_1 ; 
+ 	scovo:datasetOf :tradingStatus1_13_2 ; 
+ 	scovo:datasetOf :tradingStatus1_13_3 . 
+ 
+:tradingStatus1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.79; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.206; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.9; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.1; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.732; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.261; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.752; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.243; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.182; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.012; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.806; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.915; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.085; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.95; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.0451232; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.967; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.03; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.915; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.081; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.868; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.126; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.938; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.014; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.049; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.205; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.795; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.767; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.228; 
+ 	scovo:dataset :tradingStatus1; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of all responding businesses, broken down by size band, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :tradingStatus2_1_1 ; 
+ 	scovo:datasetOf :tradingStatus2_1_2 ; 
+ 	scovo:datasetOf :tradingStatus2_1_3 ; 
+ 	scovo:datasetOf :tradingStatus2_2_1 ; 
+ 	scovo:datasetOf :tradingStatus2_2_2 ; 
+ 	scovo:datasetOf :tradingStatus2_2_3 ; 
+ 	scovo:datasetOf :tradingStatus2_3_1 ; 
+ 	scovo:datasetOf :tradingStatus2_3_2 ; 
+ 	scovo:datasetOf :tradingStatus2_3_3 . 
+ 
+:tradingStatus2_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.748; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.247; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.798; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.197; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.767; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus2_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.228; 
+ 	scovo:dataset :tradingStatus2; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:Country rdf:type survey:Country ;
+ 	dc:title "Country" .
+ 
+:England rdf:type survey:Country ;
+ 	 dc:title "England" .
+ 
+:Wales rdf:type survey:Country ;
+ 	 dc:title "Wales" .
+ 
+:Scotland rdf:type survey:Country ;
+ 	 dc:title "Scotland" .
+ 
+:NorthernIreland rdf:type survey:Country ;
+ 	 dc:title "Northern Ireland" .
+ 
+:UK rdf:type survey:Country ;
+ 	 dc:title "UK" .
+ 
+:tradingStatus3 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of all responding businesses, broken down by country, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :tradingStatus3_1_1 ; 
+ 	scovo:datasetOf :tradingStatus3_1_2 ; 
+ 	scovo:datasetOf :tradingStatus3_1_3 ; 
+ 	scovo:datasetOf :tradingStatus3_2_1 ; 
+ 	scovo:datasetOf :tradingStatus3_2_2 ; 
+ 	scovo:datasetOf :tradingStatus3_2_3 ; 
+ 	scovo:datasetOf :tradingStatus3_3_1 ; 
+ 	scovo:datasetOf :tradingStatus3_3_2 ; 
+ 	scovo:datasetOf :tradingStatus3_3_3 ; 
+ 	scovo:datasetOf :tradingStatus3_4_1 ; 
+ 	scovo:datasetOf :tradingStatus3_4_2 ; 
+ 	scovo:datasetOf :tradingStatus3_4_3 ; 
+ 	scovo:datasetOf :tradingStatus3_5_1 ; 
+ 	scovo:datasetOf :tradingStatus3_5_2 ; 
+ 	scovo:datasetOf :tradingStatus3_5_3 . 
+ 
+:tradingStatus3_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.778; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.218; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.762; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.011; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.227; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.776; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.217; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.728; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.272; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.767; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :ContinuingToTrade; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :PermanentlyStopped; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:tradingStatus3_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.228; 
+ 	scovo:dataset :tradingStatus3; 
+ 	scovo:dimension :TemporarilyStopped; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+  
+:CoronavirusJobRetentionScheme rdf:type survey:Initiative; 
+ 	dc:title "CoronavirusJobRetentionScheme" .
+ 
+:Businessratesholiday rdf:type survey:Initiative; 
+ 	dc:title "Businessratesholiday" .
+ 
+:DeferringVATpayments rdf:type survey:Initiative; 
+ 	dc:title "DeferringVATpayments" .
+ 
+:HMRCTimeToPayscheme rdf:type survey:Initiative; 
+ 	dc:title "HMRCTimeToPayscheme" .
+ 
+:GovernmentFundedSmallBusinessGrantorLoanSchemes rdf:type survey:Initiative; 
+ 	dc:title "GovernmentFundedSmallBusinessGrantorLoanSchemes" .
+ 
+:AccreditedFinanceAgreements rdf:type survey:Initiative; 
+ 	dc:title "AccreditedFinanceAgreements" .
+ 
+:NotApplied rdf:type survey:Initiative; 
+ 	dc:title "NotApplied" .
+ 
+:appliedInitiatives1 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_1_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_2_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_3_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_4_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_5_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_6_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_7_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_8_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_9_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_10_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_11_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_12_7 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_1 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_2 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_3 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_4 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_5 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_6 ; 
+ 	scovo:datasetOf :appliedInitiatives1_13_7 . 
+ 
+:appliedInitiatives1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.635; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.14; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.443; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.193; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.048; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.086; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.26; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.686; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.157; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.571; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.214; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.057; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.1; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.214; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.809; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.135; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.599; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.287; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.06; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.096; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.117; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.726; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.446; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.601; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.25; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.133; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.09; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_4_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.155; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.871; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.782; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.806; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.422; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.249; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.206; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_5_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.027; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.766; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.241; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.553; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.248; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.064; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.092; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_6_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.167; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.401; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.082; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.474; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.137; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.036; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.038; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_7_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.373; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.622; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.126; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.662; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.186; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.049; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.081; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_8_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.207; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.757; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.201; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.637; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.205; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.218; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.123; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_9_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.139; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.405; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.085; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.263; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.07; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.022; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.028; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_10_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.484; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.345; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.134; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.162; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.063; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.106; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.028; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_11_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.556; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.763; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.572; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.612; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.331; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.18; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.183; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_12_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.126; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.672; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.274; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.564; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.223; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.112; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.099; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives1_13_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.207; 
+ 	scovo:dataset :appliedInitiatives1; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_1 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_2 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_3 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_4 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_5 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_6 ; 
+ 	scovo:datasetOf :appliedInitiatives2_1_7 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_1 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_2 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_3 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_4 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_5 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_6 ; 
+ 	scovo:datasetOf :appliedInitiatives2_2_7 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_1 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_2 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_3 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_4 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_5 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_6 ; 
+ 	scovo:datasetOf :appliedInitiatives2_3_7 . 
+ 
+:appliedInitiatives2_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.687; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.272; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.56; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.224; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.135; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.112; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.198; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.647; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.279; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.571; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.222; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.073123; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.079; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.223; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.672; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.274; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.564; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.223; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.112; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.099; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives2_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.207; 
+ 	scovo:dataset :appliedInitiatives2; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by country, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_1 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_2 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_3 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_4 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_5 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_6 ; 
+ 	scovo:datasetOf :appliedInitiatives3_1_7 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_1 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_2 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_3 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_4 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_5 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_6 ; 
+ 	scovo:datasetOf :appliedInitiatives3_2_7 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_1 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_2 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_3 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_4 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_5 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_6 ; 
+ 	scovo:datasetOf :appliedInitiatives3_3_7 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_1 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_2 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_3 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_4 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_5 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_6 ; 
+ 	scovo:datasetOf :appliedInitiatives3_4_7 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_1 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_2 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_3 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_4 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_5 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_6 ; 
+ 	scovo:datasetOf :appliedInitiatives3_5_7 . 
+ 
+:appliedInitiatives3_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.673; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.274; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.573; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.224; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.109; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.097; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.205; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :England; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.738; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.387; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.651; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.255; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.137; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.127; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.134; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Wales; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.717; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.29; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.63; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.235; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.075; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.098; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.165; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :Scotland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.652; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.304; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.402; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.13; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.109; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.065; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_4_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.239; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :NorthernIreland; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.672; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.274; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.564; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.223; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.112; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.099; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+:appliedInitiatives3_5_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.207; 
+ 	scovo:dataset :appliedInitiatives3; 
+ 	scovo:dimension :NotApplied; 
+ 	scovo:dimension :UK; 
+ 	scovo:dimension :TP2019 . 
+ 
+
+:CoronavirusJobRetentionScheme rdf:type survey:Initiative; 
+ 	dc:title "CoronavirusJobRetentionScheme" .
+ 
+:Businessratesholiday rdf:type survey:Initiative; 
+ 	dc:title "Businessratesholiday" .
+ 
+:DeferringVATpayments rdf:type survey:Initiative; 
+ 	dc:title "DeferringVATpayments" .
+ 
+:HMRCTimeToPayscheme rdf:type survey:Initiative; 
+ 	dc:title "HMRCTimeToPayscheme" .
+ 
+:GovernmentFundedSmallBusinessGrantorLoanSchemes rdf:type survey:Initiative; 
+ 	dc:title "GovernmentFundedSmallBusinessGrantorLoanSchemes" .
+ 
+:AccreditedFinanceAgreements rdf:type survey:Initiative; 
+ 	dc:title "AccreditedFinanceAgreements" .
+ 
+:NotReceived rdf:type survey:Initiative ; 
+ 	dc:title "We haven't received any that we applied for" .
+ 
+:receivedInitiatives1 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_1_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_2_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_3_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_4_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_5_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_6_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_7_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_8_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_9_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_10_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_11_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_12_7 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_1 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_2 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_3 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_4 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_5 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_6 ; 
+ 	scovo:datasetOf :receivedInitiatives1_13_7 . 
+ 
+:receivedInitiatives1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.199; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.079; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.33; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.147; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.026; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.013; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.237; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.286; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.043; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.371; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.157; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.014; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.043; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.243; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.291; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.057; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.443; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.234; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.021; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.018; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.27; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.239; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.334; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.469; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.183; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.091; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.015; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_4_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.16; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.251; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.633; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.596; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.306; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.178; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.035; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_5_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.129; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.287; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.145; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.44; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.188; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.025; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.025; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_6_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.184; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.154; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.031; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.397; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.106; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.017; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.01; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_7_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.127; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.216; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.078; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.518; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.146; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.022; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.023; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_8_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.176; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.28; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.12; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.469; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.147; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.144; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.017; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_9_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.206; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.098; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.038; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.184; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.057; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_10_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.228; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.085; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.092; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.155; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.042; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.07; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_11_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.141; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.219; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.45; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.435; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.255; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.108; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.043; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_12_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.176; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.222; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.191; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.427; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.168; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.07; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.018; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives1_13_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.189; 
+ 	scovo:dataset :receivedInitiatives1; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_1 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_2 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_3 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_4 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_5 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_6 ; 
+ 	scovo:datasetOf :receivedInitiatives2_1_7 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_1 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_2 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_3 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_4 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_5 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_6 ; 
+ 	scovo:datasetOf :receivedInitiatives2_2_7 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_1 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_2 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_3 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_4 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_5 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_6 ; 
+ 	scovo:datasetOf :receivedInitiatives2_3_7 . 
+ 
+:receivedInitiatives2_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.221; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.186; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.407; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.168; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.085; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.023; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.205; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.224; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.2; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.461; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.168; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.046; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.011; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.163; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.222; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.191; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.427; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.168; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.07; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.018; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:receivedInitiatives2_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.189; 
+ 	scovo:dataset :receivedInitiatives2; 
+ 	scovo:dimension :NotReceived; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:CoronavirusJobRetentionScheme rdf:type survey:Initiative; 
+ 	dc:title "CoronavirusJobRetentionScheme" .
+ 
+:Businessratesholiday rdf:type survey:Initiative; 
+ 	dc:title "Businessratesholiday" .
+ 
+:DeferringVATpayments rdf:type survey:Initiative; 
+ 	dc:title "DeferringVATpayments" .
+ 
+:HMRCTimeToPayscheme rdf:type survey:Initiative; 
+ 	dc:title "HMRCTimeToPayscheme" .
+ 
+:GovernmentFundedSmallBusinessGrantorLoanSchemes rdf:type survey:Initiative; 
+ 	dc:title "GovernmentFundedSmallBusinessGrantorLoanSchemes" .
+ 
+:AccreditedFinanceAgreements rdf:type survey:Initiative; 
+ 	dc:title "AccreditedFinanceAgreements" .
+ 
+:NoneOfTheAbove rdf:type survey:Initiative; 
+ 	dc:title "NoneOfTheAbove" .
+ 
+:intendingToApply1 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :intendingToApply1_1_1 ; 
+ 	scovo:datasetOf :intendingToApply1_1_2 ; 
+ 	scovo:datasetOf :intendingToApply1_1_3 ; 
+ 	scovo:datasetOf :intendingToApply1_1_4 ; 
+ 	scovo:datasetOf :intendingToApply1_1_5 ; 
+ 	scovo:datasetOf :intendingToApply1_1_6 ; 
+ 	scovo:datasetOf :intendingToApply1_1_7 ; 
+ 	scovo:datasetOf :intendingToApply1_2_1 ; 
+ 	scovo:datasetOf :intendingToApply1_2_2 ; 
+ 	scovo:datasetOf :intendingToApply1_2_3 ; 
+ 	scovo:datasetOf :intendingToApply1_2_4 ; 
+ 	scovo:datasetOf :intendingToApply1_2_5 ; 
+ 	scovo:datasetOf :intendingToApply1_2_6 ; 
+ 	scovo:datasetOf :intendingToApply1_2_7 ; 
+ 	scovo:datasetOf :intendingToApply1_3_1 ; 
+ 	scovo:datasetOf :intendingToApply1_3_2 ; 
+ 	scovo:datasetOf :intendingToApply1_3_3 ; 
+ 	scovo:datasetOf :intendingToApply1_3_4 ; 
+ 	scovo:datasetOf :intendingToApply1_3_5 ; 
+ 	scovo:datasetOf :intendingToApply1_3_6 ; 
+ 	scovo:datasetOf :intendingToApply1_3_7 ; 
+ 	scovo:datasetOf :intendingToApply1_4_1 ; 
+ 	scovo:datasetOf :intendingToApply1_4_2 ; 
+ 	scovo:datasetOf :intendingToApply1_4_3 ; 
+ 	scovo:datasetOf :intendingToApply1_4_4 ; 
+ 	scovo:datasetOf :intendingToApply1_4_5 ; 
+ 	scovo:datasetOf :intendingToApply1_4_6 ; 
+ 	scovo:datasetOf :intendingToApply1_4_7 ; 
+ 	scovo:datasetOf :intendingToApply1_5_1 ; 
+ 	scovo:datasetOf :intendingToApply1_5_2 ; 
+ 	scovo:datasetOf :intendingToApply1_5_3 ; 
+ 	scovo:datasetOf :intendingToApply1_5_4 ; 
+ 	scovo:datasetOf :intendingToApply1_5_5 ; 
+ 	scovo:datasetOf :intendingToApply1_5_6 ; 
+ 	scovo:datasetOf :intendingToApply1_5_7 ; 
+ 	scovo:datasetOf :intendingToApply1_6_1 ; 
+ 	scovo:datasetOf :intendingToApply1_6_2 ; 
+ 	scovo:datasetOf :intendingToApply1_6_3 ; 
+ 	scovo:datasetOf :intendingToApply1_6_4 ; 
+ 	scovo:datasetOf :intendingToApply1_6_5 ; 
+ 	scovo:datasetOf :intendingToApply1_6_6 ; 
+ 	scovo:datasetOf :intendingToApply1_6_7 ; 
+ 	scovo:datasetOf :intendingToApply1_7_1 ; 
+ 	scovo:datasetOf :intendingToApply1_7_2 ; 
+ 	scovo:datasetOf :intendingToApply1_7_3 ; 
+ 	scovo:datasetOf :intendingToApply1_7_4 ; 
+ 	scovo:datasetOf :intendingToApply1_7_5 ; 
+ 	scovo:datasetOf :intendingToApply1_7_6 ; 
+ 	scovo:datasetOf :intendingToApply1_7_7 ; 
+ 	scovo:datasetOf :intendingToApply1_8_1 ; 
+ 	scovo:datasetOf :intendingToApply1_8_2 ; 
+ 	scovo:datasetOf :intendingToApply1_8_3 ; 
+ 	scovo:datasetOf :intendingToApply1_8_4 ; 
+ 	scovo:datasetOf :intendingToApply1_8_5 ; 
+ 	scovo:datasetOf :intendingToApply1_8_6 ; 
+ 	scovo:datasetOf :intendingToApply1_8_7 ; 
+ 	scovo:datasetOf :intendingToApply1_9_1 ; 
+ 	scovo:datasetOf :intendingToApply1_9_2 ; 
+ 	scovo:datasetOf :intendingToApply1_9_3 ; 
+ 	scovo:datasetOf :intendingToApply1_9_4 ; 
+ 	scovo:datasetOf :intendingToApply1_9_5 ; 
+ 	scovo:datasetOf :intendingToApply1_9_6 ; 
+ 	scovo:datasetOf :intendingToApply1_9_7 ; 
+ 	scovo:datasetOf :intendingToApply1_10_1 ; 
+ 	scovo:datasetOf :intendingToApply1_10_2 ; 
+ 	scovo:datasetOf :intendingToApply1_10_3 ; 
+ 	scovo:datasetOf :intendingToApply1_10_4 ; 
+ 	scovo:datasetOf :intendingToApply1_10_5 ; 
+ 	scovo:datasetOf :intendingToApply1_10_6 ; 
+ 	scovo:datasetOf :intendingToApply1_10_7 ; 
+ 	scovo:datasetOf :intendingToApply1_11_1 ; 
+ 	scovo:datasetOf :intendingToApply1_11_2 ; 
+ 	scovo:datasetOf :intendingToApply1_11_3 ; 
+ 	scovo:datasetOf :intendingToApply1_11_4 ; 
+ 	scovo:datasetOf :intendingToApply1_11_5 ; 
+ 	scovo:datasetOf :intendingToApply1_11_6 ; 
+ 	scovo:datasetOf :intendingToApply1_11_7 ; 
+ 	scovo:datasetOf :intendingToApply1_12_1 ; 
+ 	scovo:datasetOf :intendingToApply1_12_2 ; 
+ 	scovo:datasetOf :intendingToApply1_12_3 ; 
+ 	scovo:datasetOf :intendingToApply1_12_4 ; 
+ 	scovo:datasetOf :intendingToApply1_12_5 ; 
+ 	scovo:datasetOf :intendingToApply1_12_6 ; 
+ 	scovo:datasetOf :intendingToApply1_12_7 ; 
+ 	scovo:datasetOf :intendingToApply1_13_1 ; 
+ 	scovo:datasetOf :intendingToApply1_13_2 ; 
+ 	scovo:datasetOf :intendingToApply1_13_3 ; 
+ 	scovo:datasetOf :intendingToApply1_13_4 ; 
+ 	scovo:datasetOf :intendingToApply1_13_5 ; 
+ 	scovo:datasetOf :intendingToApply1_13_6 ; 
+ 	scovo:datasetOf :intendingToApply1_13_7 . 
+ 
+:intendingToApply1_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.383; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.081; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.167; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.092; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.028; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.066; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.481; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :Manufacturing; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.386; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.071; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.229; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.143; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.029; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.071; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.457; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :WaterSupplySewerageWasteManagementRemediationActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.429; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.032; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.174; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.096; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.05; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.11; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.422; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :Construction; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.321; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.093; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.158; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.076; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.042; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.083; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_4_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.538; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :WholesaleRetailTradeRepairOfMotorVehiclesMotorcycles; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.404; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.18; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.235; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.137; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.061; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.122; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_5_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.398; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :AccommodationFoodServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.355; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.096; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.199; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.078; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.021; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.074; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_6_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.489; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :TransportationStorage; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.26; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.07; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.163; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.067; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.029; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.05; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_7_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.587; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :InformationCommunication; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.35; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.073; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.228; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.083; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.023; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.074; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_8_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.503; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :ProfessionalScientificTechnicalActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.401; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.089; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.227; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.102; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.063; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.09; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_9_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.45; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :AdministrativeSupportServiceActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.459; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.098; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.174; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.022; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.0; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.066; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_10_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.421; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :Education; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.31; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.042; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.099; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.056; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.035; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.014; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_11_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.585; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :HumanHealthSocialWorkActivities; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.41; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.122; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.212; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.104; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.058; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.108; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_12_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.392; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :ArtsEntertainmentRecreation; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.368; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.091; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.19; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.088; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.039; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.08; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply1_13_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.482; 
+ 	scovo:dataset :intendingToApply1; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :AllIndustries; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2 rdf:type scovo:Dataset ;
+ 	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by size band, UK, 6 April to 19 April 2020" ; 
+ 	scovo:datasetOf :intendingToApply2_1_1 ; 
+ 	scovo:datasetOf :intendingToApply2_1_2 ; 
+ 	scovo:datasetOf :intendingToApply2_1_3 ; 
+ 	scovo:datasetOf :intendingToApply2_1_4 ; 
+ 	scovo:datasetOf :intendingToApply2_1_5 ; 
+ 	scovo:datasetOf :intendingToApply2_1_6 ; 
+ 	scovo:datasetOf :intendingToApply2_1_7 ; 
+ 	scovo:datasetOf :intendingToApply2_2_1 ; 
+ 	scovo:datasetOf :intendingToApply2_2_2 ; 
+ 	scovo:datasetOf :intendingToApply2_2_3 ; 
+ 	scovo:datasetOf :intendingToApply2_2_4 ; 
+ 	scovo:datasetOf :intendingToApply2_2_5 ; 
+ 	scovo:datasetOf :intendingToApply2_2_6 ; 
+ 	scovo:datasetOf :intendingToApply2_2_7 ; 
+ 	scovo:datasetOf :intendingToApply2_3_1 ; 
+ 	scovo:datasetOf :intendingToApply2_3_2 ; 
+ 	scovo:datasetOf :intendingToApply2_3_3 ; 
+ 	scovo:datasetOf :intendingToApply2_3_4 ; 
+ 	scovo:datasetOf :intendingToApply2_3_5 ; 
+ 	scovo:datasetOf :intendingToApply2_3_6 ; 
+ 	scovo:datasetOf :intendingToApply2_3_7 . 
+ 
+:intendingToApply2_1_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.367; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.089; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.202; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.094; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.046; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.085; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_1_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.48; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :Lt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.37; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.094; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.169; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.078; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.027; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.072; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_2_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.486; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :Mt250; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_1 rdf:type scovo:Item ; 
+ 	rdf:value 0.368; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :CoronavirusJobRetentionScheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_2 rdf:type scovo:Item ; 
+ 	rdf:value 0.091; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :Businessratesholiday; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_3 rdf:type scovo:Item ; 
+ 	rdf:value 0.19; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :DeferringVATpayments; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_4 rdf:type scovo:Item ; 
+ 	rdf:value 0.088; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :HMRCTimeToPayscheme; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_5 rdf:type scovo:Item ; 
+ 	rdf:value 0.039; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :GovernmentFundedSmallBusinessGrantorLoanSchemes; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_6 rdf:type scovo:Item ; 
+ 	rdf:value 0.08; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :AccreditedFinanceAgreements; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
+:intendingToApply2_3_7 rdf:type scovo:Item ; 
+ 	rdf:value 0.482; 
+ 	scovo:dataset :intendingToApply2; 
+ 	scovo:dimension :NoneOfTheAbove; 
+ 	scovo:dimension :AllSizes; 
+ 	scovo:dimension :TP2019 . 
+ 
