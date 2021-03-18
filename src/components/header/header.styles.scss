@@ -1,0 +1,26 @@
+.sheets {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-color: #f0f0f0;
+
+
+  .link {
+    padding: 0 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+
+  }
+
+  .link:hover{
+    opacity: 0.6;
+  }
+
+  .link:focus {
+    text-shadow: 1px 0px #000;
+    border-bottom: 1px solid black;
+  }
+}

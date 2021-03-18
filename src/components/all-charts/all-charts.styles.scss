@@ -1,0 +1,15 @@
+.all-charts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h5 {
+    text-align: center;
+  }
+
+  .charts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
