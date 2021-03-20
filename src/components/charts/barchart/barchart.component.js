@@ -1,10 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-const BarChart = ({ v, data }) => {
+const BarChart = ({ v, data, percent }) => {
   const svgRef = useRef();
   data.sort((a, b) => d3.descending(a.value, b.value));
-  console.log({data})
 
   useEffect(() => {
     // set the dimensions and margins of the graph
@@ -110,13 +109,31 @@ const BarChart = ({ v, data }) => {
     };
     svg.append("g").attr("class", "y-axis").call(yAxis);
     svg.append("g").attr("class", "x-axis").call(xAxis);
+
+    let text = ''
+    let title = data[0].dimension.title
+    if(percent) {
+      title = title +" (%)"
+    }
+  
+    if(first < 1){
+      text = "No Businesses"
+    }
     svg
       .append("text")
       .attr("x", width / 2)
-      .attr("y", 100 - margin.top / 2)
+      .attr("y", 80 - margin.top / 2)
       .attr("text-anchor", "middle")
-      .style("font-size", "25px")
-      .text(data[0].dimension.title);
+      .style("font-size", "20px")
+      .text(title);
+
+    svg
+      .append("text")
+      .attr("x", width / 2)
+      .attr("y", 200 - margin.top / 2)
+      .attr("text-anchor", "middle")
+      .style("font-size", "20px")
+      .text(text);
 
     svg.node();
   }, [data, v]);

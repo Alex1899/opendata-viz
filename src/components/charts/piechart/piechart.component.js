@@ -3,7 +3,9 @@ import * as d3 from "d3";
 
 import "./piechart.styles.scss";
 
-const PieChart = ({ v, data }) => {
+const PieChart = ({ v, data, percent }) => {
+  data.sort((a, b) => d3.descending(a.value, b.value));
+
   const margin = {
     top: 50,
     right: 50,
@@ -21,7 +23,7 @@ const PieChart = ({ v, data }) => {
     drawChart();
   }, [data]);
 
-  function drawChart() {
+  const drawChart = () => {
     // Remove the old svg
     d3.select(`.piechart-${v}`).select(`svg`).remove();
 
@@ -76,7 +78,9 @@ const PieChart = ({ v, data }) => {
       .style("stroke", "#ffffff")
       .style("stroke-width", 5)
       .append("title")
-      .text(d => `${d.data.industry.title}: ${d.data.value.toLocaleString()}`);
+      .text(
+        (d) => `${d.data.industry.title}: ${d.data.value.toLocaleString()}`
+      );
 
     // Append text labels
     arc
@@ -94,18 +98,35 @@ const PieChart = ({ v, data }) => {
         return `translate(${x}, ${y})`;
       });
 
-    arc
-      .append("text")
-      .attr("text-anchor", "m")
+    arc.append("text").attr("text-anchor", "m");
 
-    
-
+    let text = "";
+    let first = data[0].value
+    let title = data[0].dimension.title
+    if(percent) {
+      title = title +" (%)"
+    }
+  
+    if (first < 1) {
+      text = "No Businesses";
+    }
     svg
       .append("g")
       .append("text")
       .attr("text-anchor", "middle")
-      .text(data[0].dimension.title)
-  }
+      .attr("font-weight", "bold")
+      .text( title)
+
+    svg
+    .append("text")
+    .attr("text-anchor", "middle")
+    
+    .attr("y", 100 - margin.top )
+    .text(text);
+
+   
+
+}
 
   return (
     <React.Fragment>

@@ -1539,25 +1539,25 @@ const DATA = `
  	qb:dimension :TP2019 . 
   
 :CoronavirusJobRetentionScheme rdf:type survey:Initiative; 
- 	dc:title "CoronavirusJobRetentionScheme" .
+ 	dc:title "Coronavirus Job Retention Scheme" .
  
 :Businessratesholiday rdf:type survey:Initiative; 
- 	dc:title "Businessratesholiday" .
+ 	dc:title "Business rates holiday" .
  
 :DeferringVATpayments rdf:type survey:Initiative; 
- 	dc:title "DeferringVATpayments" .
+ 	dc:title "Deferring VAT payments" .
  
 :HMRCTimeToPayscheme rdf:type survey:Initiative; 
- 	dc:title "HMRCTimeToPayscheme" .
+ 	dc:title "HMRC Time To Pay scheme" .
  
 :GovernmentFundedSmallBusinessGrantorLoanSchemes rdf:type survey:Initiative; 
- 	dc:title "GovernmentFundedSmallBusinessGrantorLoanSchemes" .
+ 	dc:title "Government-funded small business grant or loan schemes" .
  
 :AccreditedFinanceAgreements rdf:type survey:Initiative; 
- 	dc:title "AccreditedFinanceAgreements" .
+ 	dc:title "Accredited finance agreements" .
  
 :NotApplied rdf:type survey:Initiative; 
- 	dc:title "NotApplied" .
+ 	dc:title "We have not applied for any of these initiatives" .
  
 :appliedInitiatives1 rdf:type qb:DataSet ;
  	dc:title "Percentage of businesses either continuing to trade or who have temporarily paused or ceased trading, broken down by industry, UK, 6 April to 19 April 2020" . 

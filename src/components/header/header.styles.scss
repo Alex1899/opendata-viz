@@ -6,6 +6,11 @@
 
   background-color: #f0f0f0;
 
+  .active {
+    text-shadow: 1px 0px #000;
+    border-bottom: 1px solid black;
+  }
+
 
   .link {
     padding: 0 15px;
