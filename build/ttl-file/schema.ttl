@@ -1,0 +1,29 @@
+@prefix : <http://ak5u16.soton.ac.uk/BICS/schema/survey/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix scovo: <http://purl.org/NET/scovo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+     
+:TimePeriod rdf:type owl:Class ;
+    rdfs:subClassOf scovo:Dimension . 
+
+:Industry rdfs:subClassOf scovo:Dimension;
+    dc:title "Industry of the surveyed business" . 
+                    
+#Dimensions - columns
+:WorkforceSize rdf:type owl:Class ;
+    rdfs:subClassOf scovo:Dimension .
+    
+:TradingStatus rdf:type owl:Class ;
+    rdfs:subClassOf scovo:Dimension ;
+    dc:title "Current trading status of the company" .
+    
+:Country rdf:type dbo:Country ;
+    rdfs:subClassOf scovo:Dimension .
+
+:Initiative rdf:type owl:Class ;
+   rdfs:subClassOf scovo:Dimension ;
+   dc:title "Type of initiatives the company has applied for" . 

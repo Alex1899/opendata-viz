@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./home.styles.scss";
 
@@ -27,6 +28,16 @@ const Home = () => {
           when used to evaluate the impact of COVID-19 across the UK economy.
           Each business was assigned the same weight regardless of turnover,
           size or industry, and the data in the latest period are final.
+        </p>
+
+        <p>
+          Data file in Turtle format:&nbsp; 
+          <Link to="/ttl-file/data.ttl" target="_blank" download>data.ttl </Link>
+        </p>
+
+        <p>
+          Schema file in Turtle format:&nbsp;
+          <Link to="/ttl-file/schema.ttl" target="_blank" download>schema.ttl </Link>
         </p>
       </div>
     </div>
